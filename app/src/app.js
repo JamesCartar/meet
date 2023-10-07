@@ -243,7 +243,7 @@ app.post('*', function (next) {
 // GET start from here...
 app.get('*', function (next) {
     next();
-});
+ });
 
 // Remove trailing slashes in url handle bad requests
 app.use((err, req, res, next) => {
