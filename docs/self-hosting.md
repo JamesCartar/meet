@@ -33,7 +33,7 @@ $ git clone https://github.com/miroslavpejic85/mirotalk.git
 # Go to mirotalk dir
 $ cd mirotalk
 # Copy .env.template to .env and edit it if needed
-$ cp .env.template .env
+$ cp .env .env
 # Install dependencies
 $ npm install
 # Start the server
@@ -71,7 +71,7 @@ $ sudo apt install docker.io
 $ sudo apt install docker-compose
 
 # Copy .env.template to .env and edit it if needed
-$ cp .env.template .env
+$ cp .env .env
 # Copy docker-compose.template.yml in docker-compose.yml (edit it according to your needs)
 $ cp docker-compose.template.yml docker-compose.yml
 # Get official image from Docker Hub
