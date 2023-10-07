@@ -58,9 +58,9 @@ ENV=.env
 
 if ! [ -f "$ENV" ]; then
 
-    log "Copy .env.template to .env (edit it according to your needs)"
+    log "Copy .env to .env (edit it according to your needs)"
 
-    cp .env.template $ENV
+    cp .env $ENV
 
 fi
 
