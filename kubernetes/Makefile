@@ -15,7 +15,7 @@ deploy:
 	kubectl apply -f output/mirotalk-k8s.yaml
 
 env.txt:
-	@test -f env.txt || cp -v ../.env env.txt
+	@test -f env.txt || cp -v ../.env.template env.txt
 
 uninstall:
 	kubectl delete configmap p2p || :

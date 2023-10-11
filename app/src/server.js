@@ -5,7 +5,7 @@ http://patorjk.com/software/taag/#p=display&f=ANSI%20Regular&t=Server
 ██      ██      ██   ██ ██    ██ ██      ██   ██ 
 ███████ █████   ██████  ██    ██ █████   ██████  
      ██ ██      ██   ██  ██  ██  ██      ██   ██ 
-███████ ███████ ██   ██   ████   ███████ ██   ██                                         
+███████ ███████ ██   ██   ████   ███████ ██   ██                                           
 
 dependencies: {
     @sentry/node            : https://www.npmjs.com/package/@sentry/node
@@ -56,8 +56,8 @@ const path = require('path');
 const axios = require('axios');
 const app = express();
 const checkXSS = require('./xss.js');
-const Host = require('./host.js');
-const Logs = require('./logs.js');
+const Host = require('./host');
+const Logs = require('./logs');
 const log = new Logs('server');
 
 const domain = process.env.HOST || 'localhost';
@@ -243,7 +243,7 @@ app.post('*', function (next) {
 // GET start from here...
 app.get('*', function (next) {
     next();
- });
+});
 
 // Remove trailing slashes in url handle bad requests
 app.use((err, req, res, next) => {
